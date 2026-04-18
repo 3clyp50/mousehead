@@ -1,8 +1,10 @@
-# Head Mouse (Webcam-to-Mouse Head Control)
+# mousehead (Webcam-to-Mouse Head Control)
 
-This project turns a webcam into a head-tracking mouse input for Windows.
+![mousehead thumbnail](thumb.png)
 
-- Look straight, the pointer stays still.
+Stop controlling in-game cameras with your mouse. This project turns a webcam into a head-tracking mouse input for Windows.
+
+- Look straight, the pointer stays still (or at least it tries to).
 - Move your head, the pointer moves with smooth dead-zone and response controls.
 - Works with a global preview window and a separate live-controls panel.
 
@@ -91,7 +93,4 @@ py -3.12 -m venv .venv
 - `FFMPEG` backend tries `640x480` first to avoid unstable high-resolution negotiation on older webcams.
 - The preview window and control panel can be hidden to reduce latency during gameplay.
 - Tuning values are stored in `head_mouse_settings.json` and can be safely version-controlled or edited manually.
-
-## License
-
-No explicit license is included in this repository snapshot.
+- Tested on Logitech C270 from 2010 on Windows 10 x86 :-)
